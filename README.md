@@ -3,7 +3,7 @@ Algos
 
 Graphs: package com.fb.graph
 ============================
-a) Breadth First Search
+a) Breadth First Search \n
 b) Depth First Search
 c) Topological Sort
 d) Connected components
