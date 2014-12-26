@@ -1,0 +1,82 @@
+package com.linkedin.algos;
+
+public class SwapKthElementLL {
+
+	/**
+	 * TODO what if the they are next toeach other
+	 * 
+	 */
+	
+	public static void swapElement(Node<String> head){
+		//swap kth element from start and end
+		int k = 1;
+		Node<String> start = head;
+		
+		//length of LL
+		int len = 0;
+		while(start!=null){
+			start = start.next;
+			len++;
+		}
+		
+		if(k>len) return;
+		if(len/2==k)
+		
+		//Find the first swap element
+		start = head;
+		Node<String> swapStartPrev = moveNext(start, k-1);
+		Node<String> swapStart = swapStartPrev.next;
+		Node<String> swapStartNext = swapStart.next;
+		
+		//Find the last swap element
+		start = head;
+		Node<String> swapEndPrev = moveNext(start, len-k);
+		Node<String> swapEnd = swapEndPrev.next;
+		Node<String> swapEndNext = swapEnd.next;
+		
+		//If they are next to each other
+		if(swapStart.next == swapEnd || swapEnd.next==swapStart){
+			
+		}
+		
+		//Swap now
+		swapStartPrev.next = swapEnd;
+		swapEnd.next = swapStartNext;
+		swapEndPrev.next = swapStart;
+		swapStart.next = swapEndNext;
+		
+		Node.printLL(head);
+		
+	}
+	
+	private static Node<String> moveNext(Node<String> start , int k ){
+		for(int i =1;i<k; i++){
+			start = start.next;
+		}
+		
+		return start;
+	}
+	
+	public static void main(String[] args) {   
+		Node<String> first = new Node<String>("a");
+	    Node<String> second = new Node<String>("b");
+	    Node<String> third = new Node<String>("c");
+	    Node<String> fourth = new Node<String>("d");
+	    Node<String> fifth = new Node<String>("e");
+	    Node<String> sixth = new Node<String>("f");
+	    Node<String> seventh = new Node<String>("g");
+	    Node<String> eight = new Node<String>("h");
+	
+	    first.setNext(second);
+	    second.setNext(third);
+	    third.setNext(fourth);
+	    fourth.setNext(fifth);
+	    fifth.setNext(sixth);
+	    sixth.setNext(seventh);
+	    seventh.setNext(eight);
+	    Node.printLL(first);
+	    
+	    swapElement(first);
+    }
+
+}

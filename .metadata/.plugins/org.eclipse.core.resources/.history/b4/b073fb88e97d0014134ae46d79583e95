@@ -1,0 +1,20 @@
+package com.fb.graph;
+
+public class StronglyConnected {
+
+	/**
+	 * If graph has PATH between u->v and PATH between v->u then u & u are strongly connected. 
+	 * Equivalence also true if u v strongly connected and v-w strongly connected than u and w are strongly connected.
+	 * 
+	 * (a) Do topological sort or dfs with reverse post order (Stack)
+	 * (b) Use elements popped from stack (reverse post order) and do DFS all DFS graphs are Strongly connected
+	 * 
+	 * NOTE
+	 * Assuming all Strongly connected components are one node then graph we get is DAG ( removed cycle)
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

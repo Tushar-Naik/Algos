@@ -1,0 +1,32 @@
+package com.fb.graph;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.yahoo.algos.MyQueue;
+
+public class BFS<T> {
+
+	/**
+	 * Level ordering
+	 * Shortest path 
+	 */
+	private final DirectedGraph<T> graph;
+	private final MyQueue<T> queue;
+	List<T> visited = new ArrayList<T>();
+
+	public BFS(DirectedGraph<T> graph){
+		this.graph = graph;
+		queue = new MyQueue<T>(graph.totalNodes());
+	}
+	
+	private void bfs(T node){
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

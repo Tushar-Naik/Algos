@@ -1,0 +1,40 @@
+package com.fb.graph;
+
+public class StronglyConnected {
+
+	/**
+	 * If graph has PATH between u->v and PATH between v->u then u & u are strongly connected. 
+	 * Equivalence also true if u v strongly connected and v-w strongly connected than u and w are strongly connected.
+	 * 
+	 * (a) Do topological sort or dfs with reverse post order (Stack)
+	 * (b) Use elements popped from stack (reverse post order) and do DFS all DFS graphs are Strongly connected
+	 * 
+	 * NOTE
+	 * ->Assuming all Strongly connected components are one node then graph we get is DAG ( removed cycle)
+	 * ->Strongly components in G is same as reverse of Graph G (G^R). Since we need edges in both directions
+	 */
+	
+	
+	
+	public static void main(String[] args) {
+		DirectedGraph<GraphNode> dg = new DirectedGraph<GraphNode>();
+		GraphNode zero = new GraphNode("0");GraphNode one = new GraphNode("1");GraphNode two = new GraphNode("2");GraphNode three = new GraphNode("3");GraphNode four = new GraphNode("4");
+		GraphNode five = new GraphNode("5");GraphNode six = new GraphNode("6");GraphNode seven = new GraphNode("7");GraphNode eight = new GraphNode("8");GraphNode nine = new GraphNode("9");
+		GraphNode ten = new GraphNode("10");GraphNode eleven = new GraphNode("11");GraphNode twelve = new GraphNode("12");
+		dg.addNode(zero);dg.addNode(one);dg.addNode(two);dg.addNode(three);dg.addNode(four);dg.addNode(five);dg.addNode(six);dg.addNode(seven);
+		dg.addNode(eight);dg.addNode(nine);dg.addNode(ten);dg.addNode(eleven);dg.addNode(twelve);
+		
+		dg.addEdge(zero, one);dg.addEdge(zero, five);
+		dg.addEdge(two,zero);dg.addEdge(two, three);
+		dg.addEdge(three, two);dg.addEdge(three, five);
+		dg.addEdge(four,three);dg.addEdge(four,two);
+		dg.addEdge(five, four);
+		dg.addEdge(six, four);dg.addEdge(six,nine);dg.addEdge(six,eight);
+		dg.addEdge(seven, six);
+		dg.addEdge(eight,six);
+		dg.addEdge(nine, eleven);dg.addEdge(nine,ten);
+		dg.addEdge(ten, twelve);
+		dg.addEdge(eleven, twelve);
+		dg.addEdge(twelve, nine);
+	}
+}

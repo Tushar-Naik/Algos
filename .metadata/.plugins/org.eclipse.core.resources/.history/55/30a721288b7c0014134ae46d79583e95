@@ -1,0 +1,30 @@
+package com.fb.graph;
+
+import java.util.ArrayList;
+
+public class DFS<T> {
+
+	/**
+	 * DFS can be used:
+	 * (a) To find Connected Components - Change color of a picture floodfill
+	 * (b) Maze problems
+	 * 
+	 * visit all 
+	 */
+	private DirectedGraph<T> graph;
+	ArrayList<T> visitedNodes = new ArrayList<T>();
+	public DFS(DirectedGraph<T> graph){
+		this.graph = graph;
+	}
+	
+	public void dfs(T node){
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

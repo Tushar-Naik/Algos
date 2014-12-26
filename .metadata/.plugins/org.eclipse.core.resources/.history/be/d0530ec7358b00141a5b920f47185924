@@ -1,0 +1,15 @@
+package com.yahoo.random;
+
+public class ArrayIndex {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		//int[] a = {d,a,c,f,f,b,};
+		int [] a = new int[5];  //here we can take 5 int values
+		a[5]=1; 
+	}
+
+}

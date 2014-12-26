@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.flipkart.programs.SubStringSearfch&apos; to &apos;SubStringSearch&apos;&#x0A;- Original project: &apos;Algos&apos;&#x0A;- Original element: &apos;com.flipkart.programs.SubStringSearfch&apos;&#x0A;- Renamed element: &apos;com.flipkart.programs.SubStringSearch&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SubStringSearfch&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.flipkart.programs{SubStringSearfch.java[SubStringSearfch" matchStrategy="1" name="SubStringSearch" qualified="false" references="true" similarDeclarations="false" stamp="1419355955789" textual="false" version="1.0"/>
+</session>

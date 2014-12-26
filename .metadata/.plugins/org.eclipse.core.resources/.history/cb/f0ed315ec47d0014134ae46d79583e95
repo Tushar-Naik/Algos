@@ -1,0 +1,31 @@
+package com.fb.graph;
+
+import java.util.HashSet;
+
+public class FindCycle<T> {
+
+	/**
+	 * Finding cycle in an Directed Graph. Like a topologocal sort
+	 * Run on all nodes and do dfs
+	 */
+	private DirectedGraph<T> graph;
+	private HashSet<T> list = new HashSet<T>();
+	public FindCycle(DirectedGraph<T> graph){
+		this.graph = graph;
+	}
+	
+	public void findCycle(){
+		for(T node: graph){
+			
+		}
+	}
+	public void dfs(){
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

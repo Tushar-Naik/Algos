@@ -1,0 +1,35 @@
+package com.flipkart.programs;
+
+public class MyHashMap<Key,Value> {
+	private final Node[] array;
+	private static final int CAPACITY = 10;
+	
+	public MyHashMap(){
+		array = new MyHashMap.Node[CAPACITY];
+	}
+	public void put (Key key, Value val){
+		int hash = key.hashCode() & 0x7fff  % CAPACITY;
+		for(Node n = array[hash];n!=null;){
+			n=n.next;
+		}
+		
+		
+	}
+	public Value get (Key key){
+
+		return null;
+	}
+	public static void main(String[] args) {
+		MyHashMap<Integer,String> map = new MyHashMap<Integer, String>();
+		map.put(40,"AUM");
+	}
+
+	private class Node<Value>{
+		Node next;
+		Value val;
+		public Node(Value val){
+			this.val = val;
+			this.next = null;
+		}
+	}
+}

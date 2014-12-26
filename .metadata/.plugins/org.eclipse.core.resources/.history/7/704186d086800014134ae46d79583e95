@@ -1,0 +1,28 @@
+package com.yahoo.algos;
+
+public class TreeNode<T> {
+	T key;
+	TreeNode<T> left,right;
+
+	public TreeNode(T key) {
+		this.key = key;
+	}
+	
+	public void setLeft(TreeNode<T> node){
+		this.left = node;
+	}
+	public void setRight(TreeNode<T> node){
+		this.right = node;
+	}
+	public TreeNode<T> getLeft() {
+		return left;
+	}
+	public TreeNode<T> getRight() {
+		return right;
+	}
+	
+	@Override
+	public String toString(){
+		return key.toString();
+	}
+}

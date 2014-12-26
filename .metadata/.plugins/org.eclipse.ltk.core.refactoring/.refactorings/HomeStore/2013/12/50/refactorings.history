@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BucketScanner.java&apos; to &apos;MigrationArchiveMailMover/src/com.yahoo.mail.reconcile&apos;&#x0A;- Original project: &apos;HomeStore&apos;&#x0A;- Destination element: &apos;MigrationArchiveMailMover/src/com.yahoo.mail.reconcile&apos;&#x0A;- Original element: &apos;com.yahoo.mail.storage.archcrawler.BucketScanner.java&apos;" description="Copy compilation unit" destination="=MigrationArchiveMailMover/src&lt;com.yahoo.mail.reconcile" element1="/src\/main\/java&lt;com.yahoo.mail.storage.archcrawler{BucketScanner.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1387036700750" units="1" version="1.0"/>
+</session>

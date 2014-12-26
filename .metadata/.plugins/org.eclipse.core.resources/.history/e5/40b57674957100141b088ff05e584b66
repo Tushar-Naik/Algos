@@ -1,0 +1,13 @@
+package com.yahoo.random;
+
+public class MD5Hashes {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

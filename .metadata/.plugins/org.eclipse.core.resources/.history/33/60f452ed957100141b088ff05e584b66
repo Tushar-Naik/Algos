@@ -1,0 +1,17 @@
+package com.yahoo.random;
+
+public class MD5Hashes {
+
+	/**
+	 *MD5 is not collision resistent crytographic hash fn (one where you cant get which string can create hash1) md5(string)=hash1
+	 *MD5 and SHA hashes in raw form are binary, however their common representation is a hex-encoded string, which contains characters [a-fA-F0-9].
+	 *Hence we usually base64.encode(md5(String)) base64 encode the md5 byte array. More so how to store byte array so use base64
+	 *
+	 */
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.yahoo.algos;
+
+public class TreeNode<Key> {
+	Key key;
+	//Value value;
+	TreeNode<Key> left,right;
+
+	public TreeNode(Key key, Value value) {
+		this.key = key;
+	}
+}

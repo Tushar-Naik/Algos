@@ -1,0 +1,18 @@
+package com.fb.graph;
+
+public class DFS {
+
+	/**
+	 * DFS can be used:
+	 * (a) To find Connected Components - Change color of a picture floodfill
+	 * (b) Maze problems
+	 */
+	
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

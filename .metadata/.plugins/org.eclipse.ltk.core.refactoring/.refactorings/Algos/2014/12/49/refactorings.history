@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.fb.graph.DirectedGraph&apos; to &apos;UnDirectedGraph&apos;&#x0A;- Original project: &apos;Algos&apos;&#x0A;- Original element: &apos;com.fb.graph.DirectedGraph&apos;&#x0A;- Renamed element: &apos;com.fb.graph.UnDirectedGraph&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DirectedGraph&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.fb.graph{DirectedGraph.java[DirectedGraph" matchStrategy="1" name="UnDirectedGraph" qualified="false" references="true" similarDeclarations="false" stamp="1417882870250" textual="false" version="1.0"/>
+</session>
