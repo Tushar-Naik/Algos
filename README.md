@@ -3,13 +3,14 @@ Algos
 
 Graphs: package com.fb.graph
 ============================
-a) Breadth First Search \n
+a) Breadth First Search 
 b) Depth First Search
 c) Topological Sort
 d) Connected components
 e) Strongly Connected Components
 f) inOrder Traversal
 g) Directed and UnDirected Graphs
+h) Mirror a Tree
 
 Tree/ Random   package com.stackoverflow.ques;
 =============================================
