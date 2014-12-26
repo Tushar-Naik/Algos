@@ -35,6 +35,9 @@ public class TreeNode<T> {
 	public void setPathSize(int pathSize) {
 		this.pathSize = pathSize;
 	}
+	public T getKey() {
+		return key;
+	}
 	
 	@Override
 	public String toString(){

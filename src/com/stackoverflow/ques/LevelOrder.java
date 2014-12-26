@@ -44,7 +44,7 @@ public class LevelOrder<T> {
 			
 		}
 	}
-	private void printTree(TreeNode<T> root) {
+	public void printTree(TreeNode<T> root) {
 		queue.enqueue(new QNode<T>(root, 0));
 		bfs();
 	}
