@@ -11,6 +11,8 @@ e) Strongly Connected Components
 f) inOrder Traversal
 g) Directed and UnDirected Graphs
 h) Mirror a Tree
+i) SourceToDestInKPaths
+j) Is mirror SelfTree
 
 Tree/ Random   package com.stackoverflow.ques;
 =============================================
