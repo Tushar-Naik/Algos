@@ -1,26 +1,63 @@
-#Algos#   
-##Graphs: package com.fb.graph ##  
+# Algos #   
+## Graphs: ##
+package com.fb.graph 
+
 1. Breadth First Search
 1. Depth First Search
-1. Topological Sort   d) Connected components   e) Strongly Connected Components   f) inOrder Traversal   g) Directed and UnDirected Graphs   h) Mirror a Tree   i) SourceToDestInKPaths   j) Is mirror SelfTree      
-Tree/ Random   package com.stackoverflow.ques;   
-=============================================   
-a) Circumference of a Tree   b) Level Order print a Tree   c) Traverse a tree in Spiral order   d) Find the missing number in an Array   e) Snakes And Ladders   f)       
+1. Topological Sort
+1. Connected components
+1. Strongly Connected Components
+1. Pre/Post/InOrder Traversal
+1. Directed and UnDirected Graphs
+1. Mirror a Tree
+1. SourceToDestInKPaths
+1. Is mirror SelfTree      
 
-LinkedLists   
+## Tree/ Random ##  
+package com.stackoverflow.ques
+
+1. Circumference of a Tree
+1. Level Order print a Tree
+1. Traverse a tree in Spiral order
+1. Find the missing number in an Array
+1. Snakes And Ladders
+
+## LinkedLists ##  
 package com.linkedin.algos;   
-==========================================   
-a) Reverse Linked List   b) Palindrome Linked List   c) Swap Kth Element from start end in Linked List   d) Find a Loop in Linked List and break the loop      
 
-Programs   
+1. Reverse Linked List
+1. Palindrome Linked List
+1. Swap Kth Element from start end in Linked List
+1. Find a Loop in Linked List and break the loop      
+
+## Programs ##
 package com.flipkart.programs;   
-==========================================   
-a) LRU Cache   b) MobilePad   c) MyBlockingQueue   d) MyHashMap   e) MyProducerConsumer uses MyBlockingQueue and wait/notify or condition/RentrantLock   f) ProducerConsumer used JDK1.5 Blocking Queue   g) SubStringSearch (BoyerMoores and Basic approach)       DP   ==   CoinChange Problem      
 
-Others  
+1. LRU Cache
+1. MobilePad
+1. MyBlockingQueue
+1. MyHashMap
+1. MyProducerConsumer uses MyBlockingQueue and wait/notify or condition/RentrantLock
+1. ProducerConsumer used JDK1.5 Blocking Queue
+1. SubStringSearch (BoyerMoores and Basic approach)       
+1. MyThreadPool
+
+
+## DP ##
+CoinChange Problem      
+
+## Others  ##
 package com.yahoo.algos;   
-==============================   
-a) KthLargest   b) MyStack   c) MyQueue   d) BST   e) BinarySearch   f) KthLargest (usingQuick Select)   g) Sorting algos   h) FirstRepeating   i) ShuffleArray
+
+1. KthLargest
+1. MyStack
+1. MyQueue
+1. BST
+1. BinarySearch
+1. KthLargest (usingQuick Select)
+1. Sorting algos
+1. FirstRepeating
+1. ShuffleArray
 
 
 LSG Stats
