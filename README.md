@@ -21,3 +21,17 @@ Others
 package com.yahoo.algos;   
 ==============================   
 a) KthLargest   b) MyStack   c) MyQueue   d) BST   e) BinarySearch   f) KthLargest (usingQuick Select)   g) Sorting algos   h) FirstRepeating   i) ShuffleArray
+
+
+LSG Stats
+BULK:
+120k avg (100k Save 10k fetch) each 5 mins each host. 10 hosts each cluster and 19 clusters worldwide (13 in USFR)
+= 120,000*10*19 / 300 = 76K rps (WW)
+
+HS: 
+40k save 100k fetch = 140k each 5 mins on 32 hosts each 22 USFR cluster and 12 Intl clusters ~70k
+= [(22*32*140) + (12*32*70) ]/300 = 183K rps
+
+LS
+133k *3* 365 bf1 + 100k * 4* 300
+~800k rps in USFR

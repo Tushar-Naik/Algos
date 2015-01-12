@@ -12,7 +12,7 @@ public class TestExecutor {
 	 */
 	public static void main(String[] args) throws InterruptedException {
 		TestExecutor testExecutor = new TestExecutor();
-		ExecutorService exe = Executors.newFixedThreadPool(10);
+		ExecutorService exe = Executors.newFixedThreadPool(2);
 		for (int i =0;i<10;i++){
 			exe.submit(testExecutor.new MyThread());
 		}
@@ -24,7 +24,7 @@ public class TestExecutor {
 		public void run(){
 			try {
 				for (int i=0;i<Integer.MAX_VALUE;i++){
-					Thread.sleep(100);
+					Thread.sleep(10000);
 					System.out.println(Thread.currentThread().getName()+ " up");
 				}
 			} catch (InterruptedException e) {

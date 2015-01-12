@@ -28,6 +28,8 @@ public class StronglyConnected<T> {
 	 * NOTE
 	 * ->Assuming all Strongly connected components are one node then graph we get is DAG ( removed cycle)
 	 * ->Strongly components in G is same as reverse of Graph G (G^R). Since we need edges in both directions
+	 * 
+	 * Removing a node doesnt cause lot of isssue, like Social graph or network where some nodes are strongly connected.
 	 */
 	
 	private final DirectedGraph<T> graph;
