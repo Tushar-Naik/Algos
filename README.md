@@ -1,8 +1,8 @@
-Algos   
-=====      
-Graphs: package com.fb.graph   
-============================   
-a) Breadth First Search    b) Depth First Search   c) Topological Sort   d) Connected components   e) Strongly Connected Components   f) inOrder Traversal   g) Directed and UnDirected Graphs   h) Mirror a Tree   i) SourceToDestInKPaths   j) Is mirror SelfTree      
+#Algos#   
+##Graphs: package com.fb.graph ##  
+1. Breadth First Search
+1. Depth First Search
+1. Topological Sort   d) Connected components   e) Strongly Connected Components   f) inOrder Traversal   g) Directed and UnDirected Graphs   h) Mirror a Tree   i) SourceToDestInKPaths   j) Is mirror SelfTree      
 Tree/ Random   package com.stackoverflow.ques;   
 =============================================   
 a) Circumference of a Tree   b) Level Order print a Tree   c) Traverse a tree in Spiral order   d) Find the missing number in an Array   e) Snakes And Ladders   f)       
