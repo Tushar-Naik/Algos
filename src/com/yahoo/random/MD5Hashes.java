@@ -28,7 +28,8 @@ public class MD5Hashes {
 			//LSG
 			MessageDigest md1 = MessageDigest.getInstance("MD5");
 			String salt = "LIGHT"+12344+"SABER";//12344 is sledid
-			md1.digest(salt.getBytes("UTF-8"));
+			//This is function digest() is final update to digest else you can call md1.update multiple times as stream
+			md1.digest(salt.getBytes("UTF-8")); 
 		} catch (UnsupportedEncodingException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
