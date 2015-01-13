@@ -1,5 +1,6 @@
 package com.yahoo.random;
 
+import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -21,6 +22,18 @@ public class MD5Hashes {
 		md.update("AUM".getBytes());
 		byte[] b = md.digest();
 		System.out.println(new String(b));
+		
+		try {
+			//This is stream update like CRC32
+			//LSG
+			MessageDigest md1 = MessageDigest.getInstance("MD5");
+			String salt = "LIGHT"+12344+"SABER";//12344 is sledid
+			//This is function digest() is final update to digest else you can call md1.update multiple times as stream
+			md1.digest(salt.getBytes("UTF-8")); 
+		} catch (UnsupportedEncodingException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 
