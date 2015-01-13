@@ -41,6 +41,7 @@ public class MobilePad {
 				dfs(leaf, graph, visited);
 			}
 		}
+		visited.remove(node);
 		//dfs(node, graph, visited);
 	}
 	

@@ -21,6 +21,7 @@ public class RepeatedCharInString {
 	}
 	
 
+	/*replace blank with %20 */
 	public static void ReplaceFun(char[] str, int length) {
 		int spaceCount = 0, newLength, i = 0;
 		for (i = 0; i < length; i++) {
