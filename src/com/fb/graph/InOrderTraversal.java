@@ -10,7 +10,7 @@ import com.yahoo.algos.TreeNode;
 
 public class InOrderTraversal<T>{
 
-	private void inOrder(TreeNode<T> node){
+	public void inOrder(TreeNode<T> node){
 		if(node==null) return;
 		inOrder(node.getLeft());
 		System.out.print(node+" ");
@@ -31,30 +31,39 @@ public class InOrderTraversal<T>{
 		System.out.print(node+" ");
 	}
 	
+	public void descOrder(TreeNode<T> node){
+		if (node==null) return;
+		descOrder(node.getRight());
+		System.out.print(node+" ");
+		descOrder(node.getLeft());
+	}
+
+	
 	public static void main(String[] args) {
 		/*
-		 *             0
+		 *             50
 		 *          /    \
-		 *        5       6
+		 *        30       70
 		 *      /  \      / 
-		 *    3     4    7
+		 *    20     40  60  
 		*/
 		
-		TreeNode<Integer> root = new TreeNode<Integer>(0); 
-		TreeNode<Integer> five = new TreeNode<Integer>(5); 
-		TreeNode<Integer> six = new TreeNode<Integer>(6); 
-		TreeNode<Integer> three = new TreeNode<Integer>(3); 
-		TreeNode<Integer> four = new TreeNode<Integer>(4); 
-		TreeNode<Integer> seven = new TreeNode<Integer>(7); 
+		TreeNode<Integer> root = new TreeNode<Integer>(50); 
+		TreeNode<Integer> thirty = new TreeNode<Integer>(30); 
+		TreeNode<Integer> seventy = new TreeNode<Integer>(70); 
+		TreeNode<Integer> twenty = new TreeNode<Integer>(20); 
+		TreeNode<Integer> fourty = new TreeNode<Integer>(40); 
+		TreeNode<Integer> sixty = new TreeNode<Integer>(60); 
 		
-		root.setLeft(five);root.setRight(six);
-		five.setLeft(three);five.setRight(four);
-		six.setLeft(seven);
+		root.setLeft(thirty);root.setRight(seventy);
+		thirty.setLeft(twenty);thirty.setRight(fourty);
+		seventy.setLeft(sixty);
+		
 		
 		InOrderTraversal<Integer> tree = new InOrderTraversal<Integer>();
 		System.out.println( "\nIN ORDER");tree.inOrder(root);
 		System.out.println( "\nPOST ORDER");tree.postOrder(root);
 		System.out.println( "\nPRE ORDERR");tree.preOrder(root);
-		
+	
 	}
 }

@@ -12,6 +12,7 @@ package com.fb.graph
 1. Mirror a Tree
 1. SourceToDestInKPaths
 1. Is mirror SelfTree      
+1. Modify BST such that all greater values in the given BST are added to every node
 
 ## Tree/ Random ##  
 package com.stackoverflow.ques
