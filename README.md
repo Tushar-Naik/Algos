@@ -13,6 +13,11 @@ package com.fb.graph
 1. SourceToDestInKPaths
 1. Is mirror SelfTree      
 1. Modify BST such that all greater values in the given BST are added to every node
+1. Check if Binary Tree is Balanced
+1. Convert Binary Tree as sum of its child nodes
+1. Traverse Tree without using Recursion (Finds the pressessor of a node like Threaded BT)
+1. Find out order of characters given the Dictionary of alphabets
+1. Print Org History
 
 ## Tree/ Random ##  
 package com.stackoverflow.ques
@@ -59,6 +64,8 @@ package com.yahoo.algos;
 1. Sorting algos
 1. FirstRepeating
 1. ShuffleArray
+1. Job Sequencing given deadlines
+1. Search in a sorted rotated array
 
 
 LSG Stats
