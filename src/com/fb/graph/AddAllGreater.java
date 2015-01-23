@@ -18,7 +18,7 @@ The above tree should be modified to following
  */
 public class AddAllGreater<T> {
 
-	int count=0;
+	Integer count=0;
 	private void myOrder(TreeNode<Integer> node ){
 		if(node==null) return;
 		myOrder(node.getRight());
@@ -53,7 +53,7 @@ public class AddAllGreater<T> {
 		AddAllGreater<Integer> tree = new AddAllGreater<Integer>();
 		TreeNode<Integer> newTreeRoot = new TreeNode<Integer>(root.getKey());
 		System.out.println("\n my");tree.myOrder(root);
-		System.out.println("\n new "); new InOrderTraversal<Integer>().descOrder(root);
+		System.out.println("\n new "); new InOrderTraversal<Integer>().inOrder(root);
 	}
 
 }

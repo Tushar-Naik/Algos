@@ -60,6 +60,10 @@ public class MyQueue<E> {
 		return (size==capacity);
 	}
 	
+	public int size(){
+		return size;
+	}
+	
 	public static void main(String[] args) {
 		MyQueue<String> queue = new MyQueue<String>(3);
 		queue.enqueue("Shubh");

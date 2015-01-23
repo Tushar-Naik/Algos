@@ -28,7 +28,7 @@ public class DirectedGraph <T> implements Iterable<T>{
 		return true;
 	}
 	
-	public int inDegree(T node){
+	public int outDegree(T node){
 		if(!graph.containsKey(node) ){
 			throw new IllegalArgumentException();
 		}

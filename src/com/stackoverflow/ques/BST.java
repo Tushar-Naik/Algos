@@ -34,6 +34,10 @@ public class BST<K extends Comparable<K>,V> {
 		return null;
 	}
 	
+	public void floor(){
+		
+	}
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
