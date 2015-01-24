@@ -7,9 +7,29 @@ public class RotatedArraySearch {
 	 */
 	public static void main(String[] args) {
 		//int[] arr = {8,9,10,1,2,3,4,5,6,7};
-		int[] arr = {2,3,2,2,2};
+		int[] arr = {2,3,4,5,1};
+		//int[] arr = {2,3,2,2,2};
 		int searchFor = 3;
 		System.out.println(searchRotated(arr, 0, arr.length-1, searchFor ));
+		System.out.println(findPivot(arr,0,arr.length-1));
+	}
+
+	private static int findPivot(int[] arr, int low, int high) {
+		if (low>high) 
+			return -1;
+		
+		int mid = low + (high -low)/2;
+		if(arr[mid-1] <= arr[mid] && arr[mid] >= arr[mid+1]){
+			return mid;
+		}
+			
+		
+		if(arr[mid] <= arr[high]){//Array at right sorted move left
+			high = mid -1;
+		}else {
+			low = mid + 1; 
+		}
+		return findPivot(arr, low, high);
 	}
 
 	private static int searchRotated(int[] arr, int low, int high, int searchFor) {

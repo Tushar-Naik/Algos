@@ -6,6 +6,14 @@ import java.util.TreeMap;
 
 public class Test {
 
+	protected int protectedInt = 1;
+	protected void protectedMethod() throws Exception{
+		System.out.println("protectedMethod");
+	}
+	public void publicMethod(){
+		System.out.println("protectedMethod");
+	}
+	
 	/**
 	 * @param args
 	 */
@@ -23,7 +31,7 @@ public class Test {
 		}
 		
 	}
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 		Comparator<Integer> comp = new Comparator<Integer>() {
 			@Override
 			public int compare(Integer o1, Integer o2) {

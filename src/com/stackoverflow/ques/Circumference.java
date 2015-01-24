@@ -4,7 +4,7 @@ import com.yahoo.algos.TreeNode;
 
 public class Circumference<T> {
 
-
+	static int maxPath = -1;
 	private int printTree(TreeNode<T> node) {
 		if (node.getLeft() == null && node.getRight() == null){
 			node.setDepth(0);node.setPathSize(-1);
@@ -16,6 +16,8 @@ public class Circumference<T> {
 		node.setDepth(1+Math.max(lDepth, rDepth));
 		
 		if(node.getLeft()!=null && node.getRight() != null){
+			int pathSize = 2 + lDepth + rDepth;
+			if (pathSize > maxPath) maxPath = pathSize;
 			node.setPathSize(2 + lDepth + rDepth);
 		}
 		
@@ -73,13 +75,31 @@ public class Circumference<T> {
 		 *           12 13   
 		 *   
 		 */
-		root.setLeft(five);root.setRight(six);
-		five.setRight(four);four.setRight(twelve);
-		six.setLeft(seven);seven.setLeft(thirteen);
-		six.setRight(eight);
+//		root.setLeft(five);root.setRight(six);
+//		five.setRight(four);four.setRight(twelve);
+//		six.setLeft(seven);seven.setLeft(thirteen);
+//		six.setRight(eight);
+//		
+		
+		/*             0
+		 *            /  \
+		 *          10     6
+		 *                 / \ 
+		 *                7    5
+		 *               /    /
+		 *             13   4
+		 *             /     \
+		 *           12      16  
+		 */
+		root.setRight(six);root.setLeft(ten);
+		six.setLeft(seven);six.setRight(five);
+		seven.setLeft(thirteen); 
+		thirteen.setLeft(twelve);
+		five.setLeft(four); four.setRight(sixteen);
 		
 		System.out.println(new Circumference<Integer>().printTree(root));
 		System.out.println(root.getPathSize());
+		System.out.println("Max "+maxPath);
 		//Circumference do dfs and find all max path sizes
 	}
 

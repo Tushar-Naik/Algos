@@ -15,6 +15,9 @@ public class OrgHistory<T> {
 			return;
 		}
 		
+		print(node.getLeft());
+		print(node.getRight());
+		
 		if (node.getLeft()!=null){
 			System.out.println(node.getKey() +" manages "+ node.getLeft().getKey());
 		}
@@ -22,8 +25,7 @@ public class OrgHistory<T> {
 			System.out.println(node.getKey() +" manages "+ node.getRight().getKey());
 		}
 		
-		print(node.getLeft());
-		print(node.getRight());
+		
 		
 	}
 	
