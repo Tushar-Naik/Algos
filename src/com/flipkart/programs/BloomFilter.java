@@ -1,4 +1,4 @@
-package com.yahoo.random;
+package com.flipkart.programs;
 
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
@@ -10,7 +10,11 @@ import com.yahoo.algos.MurmurHash;
 public class BloomFilter {
 
 	/**
-	 * @param args
+	 * A Bloom filter is a data structure designed to tell you, rapidly and memory-efficiently, whether an element is present in a set.
+	 * The price paid for this efficiency is that a Bloom filter is a probabilistic data structure: 
+	 * it tells us that the element either definitely is not in the set or may be in the set. 
+	 * 
+	 * http://billmill.org/bloomfilter-tutorial/
 	 */
 	
 	private final int BITS = 32;

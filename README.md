@@ -47,6 +47,10 @@ package com.flipkart.programs;
 1. ProducerConsumer used JDK1.5 Blocking Queue
 1. SubStringSearch (BoyerMoores and Basic approach)       
 1. MyThreadPool
+1. Consistent Hashing
+1. MySemaphore
+1. MyBarrier
+1. BloomFilter
 
 
 ## DP ##
@@ -66,6 +70,7 @@ package com.yahoo.algos;
 1. ShuffleArray
 1. Job Sequencing given deadlines
 1. Search in a sorted rotated array
+1. Reverse/Rotate a String
 
 
 LSG Stats
