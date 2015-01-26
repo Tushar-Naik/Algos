@@ -92,8 +92,8 @@ class MyThread extends Thread{
 				if(stopThread){
 					System.out.println(Thread.currentThread().getName()+" Stopped"); Thread.currentThread().interrupt(); // break;
 				}
-				//MyWorker worker =  queue.take(); //Blocking call 
-				MyWorker worker =  queue.poll(1000, TimeUnit.MILLISECONDS); //Blocking call if no obj in 1000 ms come out with null worker output
+				MyWorker worker =  queue.take(); //Blocking call 
+				//MyWorker worker =  queue.poll(1000, TimeUnit.MILLISECONDS); //Blocking call if no obj in 1000 ms come out with null worker output
 				if(queue.isEmpty() && stopThread){
 					throw new InterruptedException();
 				}

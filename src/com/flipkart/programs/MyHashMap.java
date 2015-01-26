@@ -10,7 +10,7 @@ public class MyHashMap<Key,Value> {
 	public void put (Key key, Value val){
 		int hash = (key.hashCode() & 0x7fffffff)  % CAPACITY; // Making key positive just in case someone gave -ve number
 		for(Node<Key, Value> n = array[hash];n!=null;n = n.next){
-			if(n.getKey().equals(key)) n.setVal(val);
+			if(n.getKey().equals(key)) {n.setVal(val);return;}
 		}
 		array[hash] = new Node<Key, Value>(val,key,array[hash]);
 		
