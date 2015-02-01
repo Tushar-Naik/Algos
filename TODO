@@ -7,12 +7,12 @@ Rotate LL
 Edit Distance
 
 Recomendation 
-Revise Trie, Search, BST (delete, floor, insert, search)
+Revise Trie, Search, BST (delete, floor, insert, search), LCA, Inorder no Recurse, Quick sort/select, Heap, 
+Rotate array pivot
 
 Design
 Chess
 
-Storm
 CEPH
 Graph DB
 
@@ -22,5 +22,6 @@ Find keywords in para
 System Design
 1) Cab System
 2) Google Search
-
+3) Facebook
+4) Make my trip
 

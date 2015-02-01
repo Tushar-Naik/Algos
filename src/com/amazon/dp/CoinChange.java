@@ -24,7 +24,7 @@ public class CoinChange {
 			int changeVal = changeP-coins[i];
 			if(changeVal < 0 ) continue;
 			if (!result.containsKey(changeVal)) result.put(changeVal, change(changeVal) );
-			System.out.println(String.format("For %s calculated C(%s)=%s",changeP,(changeP-coins[i]), result.get(changeVal)));
+			System.out.println(String.format("For %s calculated C(%s)=%s",changeP,changeVal, result.get(changeVal)));
 			min = Math.min(min,result.get(changeVal));
 		}
 		return min+1;

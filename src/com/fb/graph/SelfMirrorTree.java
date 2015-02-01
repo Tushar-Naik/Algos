@@ -23,6 +23,13 @@ public class SelfMirrorTree<T> {
 		
 		return mirror(nodeA.getLeft(), nodeB.getRight()) && mirror(nodeA.getRight(), nodeB.getLeft()) ;
 	}
+	
+	//wrong
+	private boolean mirror(TreeNode<String> node){
+		if (node==null) return true;
+		return (node.getLeft()==node.getRight());
+	}
+			
 	public static void main(String[] args) {
 		/*
 		 *               0
@@ -63,5 +70,7 @@ public class SelfMirrorTree<T> {
 		
 		new LevelOrder<String>().printTree(root);
 		System.out.println("\n\n"+new SelfMirrorTree<String>().mirror(root.getLeft(), root.getRight()));
+		
+		System.out.println("\n\n"+new SelfMirrorTree<String>().mirror(root));
 	}
 }

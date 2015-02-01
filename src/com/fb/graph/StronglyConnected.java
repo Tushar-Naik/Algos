@@ -71,7 +71,7 @@ public class StronglyConnected<T> {
 	
 	public void dfs(T node, int count){
 		visitedNodes.add(node);stronglyConnectedComponents.get(count).add(node);
-		for(T leaf : graph.getAdjacentNodes(node)){
+		for(T leaf : revGraph.getAdjacentNodes(node)){
 			if(!visitedNodes.contains(leaf)){
 				dfs(leaf, count);
 			}
@@ -80,7 +80,7 @@ public class StronglyConnected<T> {
 	
 	public void dfs(T node){
 		visitedNodes.add(node);
-		for(T leaf : revGraph.getAdjacentNodes(node)){
+		for(T leaf : graph.getAdjacentNodes(node)){
 			if(!visitedNodes.contains(leaf)){
 				dfs(leaf);
 			}
