@@ -29,6 +29,7 @@ package com.stackoverflow.ques
 1. Traverse a tree in Spiral order
 1. Find the missing number in an Array
 1. Snakes And Ladders
+1. Print All Left nodes, All Right Nodes and All Leaf nodes
 
 ## LinkedLists ##  
 package com.linkedin.algos;   
@@ -78,6 +79,8 @@ package com.yahoo.algos;
 1. Find first N prime numbers
 1. For given Array find max sum such that nothing adjacent
 1. Rotate a Matrix by 90 degrees
+1. MatrixExtend All 1 To Row and Cols
+1. Next Greatest Number With Same Digits
 
 LSG Stats
 BULK:

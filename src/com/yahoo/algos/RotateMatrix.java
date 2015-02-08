@@ -21,20 +21,11 @@ public class RotateMatrix {
 		}
 	}
 	
-	private static void printMatrix(int[][] mat, int row, int col){
-		for (int i=0;i<=row-1;i++){
-			for (int j=0;j<=col-1;j++){
-				System.out.print(mat[i][j]+"  ");
-			}
-			System.out.println();
-		}
-	}
-	
 	public static void main(String[] args) {
-		printMatrix(matrixA, row, col);
+		Common.printMatrix(matrixA);
 		rotateMatrix();
 		System.out.println("---------");
-		printMatrix(matrixB, col, row);
+		Common.printMatrix(matrixB);
 	}
 
 }

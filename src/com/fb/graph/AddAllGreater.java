@@ -2,6 +2,8 @@ package com.fb.graph;
 
 import com.yahoo.algos.TreeNode;
 /*
+ * Replace nodes val with sum of all node vals less than yours. Lowest becomes max sum (sum of all) 
+ * 
  *            50
            /      \
          30        70
@@ -51,7 +53,6 @@ public class AddAllGreater<T> {
 		seventy.setLeft(sixty);seventy.setRight(eighty);
 		
 		AddAllGreater<Integer> tree = new AddAllGreater<Integer>();
-		TreeNode<Integer> newTreeRoot = new TreeNode<Integer>(root.getKey());
 		System.out.println("\n my");tree.myOrder(root);
 		System.out.println("\n new "); new InOrderTraversal<Integer>().inOrder(root);
 	}
