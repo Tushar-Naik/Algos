@@ -23,7 +23,7 @@ public class SubStringSearch {
 				if(j==PATTERN.length()-1) {System.out.println("Matched "+i+" to "+ (i+PATTERN.length()-1)); start = i; end = (i+PATTERN.length()-1); return;}
 			}
 		}
-
+			end= n-1;
 	}
 	
 	public static int searchBoyerMayer(){
@@ -75,16 +75,16 @@ public class SubStringSearch {
 			}
 			if (skip == 0) return i;
 		}
-		return S;
+		return S-1;
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		search();
-		//VALIDATE
-		for(int i = start;i<=end;i++){
-			System.out.print(SEARCH.charAt(i));
-		}
+//		search();
+//		//VALIDATE
+//		for(int i = start;i<=end;i++){
+//			System.out.print(SEARCH.charAt(i));
+//		}
 		start = searchBoyerMayer();
 		for(int i = start;i<=start + PATTERN.length()-1;i++){
 			System.out.print(SEARCH.charAt(i));

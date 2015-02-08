@@ -4,8 +4,7 @@ public class ReverseString {
 
 	public static void reverse(char[] charStr, int start , int end){
 		while(end>=start){
-			swap(charStr, start, end);
-			start++; end--;
+			swap(charStr, start++, end--);
 		}
 		System.out.println(new String(charStr));
 	}
@@ -33,9 +32,9 @@ public class ReverseString {
 	}
 	
 	public static void main(String[] args) {
-		leftRotate("happy", 2);
+		leftRotate("education", 4);
 		System.out.println();
-		rightRotate("happy", 2);
+		rightRotate("education", 4);
 		
 	
 	}

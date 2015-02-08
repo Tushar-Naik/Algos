@@ -18,6 +18,8 @@ package com.fb.graph
 1. Traverse Tree without using Recursion (Finds the pressessor of a node like Threaded BT)
 1. Find out order of characters given the Dictionary of alphabets
 1. Print Org History
+1. Find paths in tree that sum to K (can have negative vals and can have more than one path)
+1. Structurally similar Graphs
 
 ## Tree/ Random ##  
 package com.stackoverflow.ques
@@ -71,7 +73,11 @@ package com.yahoo.algos;
 1. Job Sequencing given deadlines
 1. Search in a sorted rotated array
 1. Reverse/Rotate a String
-
+1. Activity Selection, show timings start/end given say which all can we attend
+1. Anagrams Of a word in given text
+1. Find first N prime numbers
+1. For given Array find max sum such that nothing adjacent
+1. Rotate a Matrix by 90 degrees
 
 LSG Stats
 BULK:

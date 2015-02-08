@@ -30,6 +30,7 @@ public class FindNPrime {
 		
 	}
 	
+	//not working
 	public void printFirstNPrimesEasy(int max){
 		int counter=0;
 		for (int i = 2; i <= max; i++) {

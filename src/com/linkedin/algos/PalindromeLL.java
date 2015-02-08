@@ -10,11 +10,9 @@ public class PalindromeLL<T> {
 		//Reach center of the LL
 		Node<T> fast = first;
 		Node<T> slow = first;
-		int count =0;
 		while(fast.next!=null && fast.next.next!=null){
 			slow = slow.next;
 			fast = fast.next.next;
-			count ++;
 		}
 		System.out.println("Mid point: "+slow);
 		new ReverseLinkedList<T>().reverse(slow.next);
@@ -22,7 +20,12 @@ public class PalindromeLL<T> {
 		
 		Node.printLL(first);
 		Node.printLL(last);
-		
+		boolean isPalen= true;
+		while(first.next!=null && last.next!=null){
+			if(first.val!=last.val) {isPalen=false;break;}
+			first = first.next;last= last.next;
+		}
+		System.out.println(isPalen+"");
 		
 		
 	}
@@ -38,6 +41,7 @@ public class PalindromeLL<T> {
 
         first.setNext(second);
         second.setNext(third);
+//        third.setNext(fifth);
         third.setNext(fourth);
         fourth.setNext(fifth);
         fifth.setNext(sixth);
