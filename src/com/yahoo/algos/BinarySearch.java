@@ -21,7 +21,7 @@ public class BinarySearch {
 	}
 	
 	private static int bsearch1(int low, int high){ //fails on last and first index
-		if(low>high) return -1;
+		if(low>high) return -1; //NOTE not low<=high
 		int mid  = low + (high - low)/2;
 		if(array[mid]==search){
 			return mid;

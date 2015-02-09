@@ -22,6 +22,7 @@ public class KthLargest {
 		int lo =0; int hi = array.length-1;
 		while (lo<=hi){
 			int j = partition(array,lo,hi);
+			Common.print(array, "After Partion");
 			System.out.println("partition "+j);
 			if(kLargest < j){
 				//my kth largest is in left side 

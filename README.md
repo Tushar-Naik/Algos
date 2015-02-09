@@ -80,6 +80,7 @@ package com.yahoo.algos;
 1. For given Array find max sum such that nothing adjacent
 1. Rotate a Matrix by 90 degrees
 1. MatrixExtend All 1 To Row and Cols
+1. Decode an input in different ways given mapping say a=1 b=2 decode 121
 1. Next Greatest Number With Same Digits
 
 LSG Stats
