@@ -25,6 +25,13 @@ public class ArrayIndex {
 			System.out.print(s.charAt(i));
 		}
 		
+		
+		//complement (bitwise complement. ) of b a given integer 
+		System.out.println("\ncompliment:");
+		int num = 15;int val = num^0xffffffff;
+		System.out.println(num|1);
+		System.out.println(num^1);
+		System.out.println(Integer.toBinaryString(val));
 	}
 
 }

@@ -3,8 +3,8 @@ package com.yahoo.algos;
 public class FirstRepeating {
 
 	/**
-	 *  The conclusion is that if we XOR a number with itself odd number of times we get 0, 
-	 *  otherwise if we XOR even number of times then we get the number itself. -
+	 *  The conclusion is that if we XOR a number with itself odd number of times we get the number, 
+	 *  otherwise if we XOR even number of times then we get the zero. -
 	 *   See more at: http://www.ardendertat.com/2011/11/29/programming-interview-questions-18-find-even-occurring-element/#sthash.4kj2pSjJ.dpuf
 	 */
 	public static void main(String[] args) {

@@ -13,7 +13,8 @@ public class PermutationOfWord {
 		}
 			
 		for(int i=0;i<n;i++){
-			permutations(suffix + word.charAt(i), word.substring(0,i) + word.substring(i+1));
+			permutations(suffix + word.charAt(i), 
+					     word.substring(0,i) + word.substring(i+1));
 		}
 	}
 	

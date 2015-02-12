@@ -16,7 +16,6 @@ public class FindNPrime {
 		while(count<=n){
 			if(isPrime(++i)) {
 				count++; 
-				//System.out.println(i);
 				list.add(i);
 			}
 		}

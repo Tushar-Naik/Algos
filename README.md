@@ -20,6 +20,8 @@ package com.fb.graph
 1. Print Org History
 1. Find paths in tree that sum to K (can have negative vals and can have more than one path)
 1. Structurally similar Graphs
+1. Is a Graph a Binary Search Tree
+
 
 ## Tree/ Random ##  
 package com.stackoverflow.ques
@@ -38,6 +40,7 @@ package com.linkedin.algos;
 1. Palindrome Linked List
 1. Swap Kth Element from start end in Linked List
 1. Find a Loop in Linked List and break the loop      
+1. Create a Double Linked list from the leafs of a Binary Tree.
 
 ## Programs ##
 package com.flipkart.programs;   
@@ -57,7 +60,8 @@ package com.flipkart.programs;
 
 
 ## DP ##
-CoinChange Problem      
+1. CoinChange Problem      
+1. Longest Common Subsequence in two Strings (DP)
 
 ## Others  ##
 package com.yahoo.algos;   
@@ -82,6 +86,8 @@ package com.yahoo.algos;
 1. MatrixExtend All 1 To Row and Cols
 1. Decode an input in different ways given mapping say a=1 b=2 decode 121
 1. Next Greatest Number With Same Digits
+1. All Substrings of a String
+1. Path to reach N stairs chosing 1,2 or 3 steps at a time.
 
 LSG Stats
 BULK:

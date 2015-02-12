@@ -33,6 +33,23 @@ public class FindPaths {
 		System.out.println(); 
 	}
 	
+	void findSum2(TreeNode<Integer> node, int sum, ArrayList<Integer> buffer){
+		if(node==null) return;
+		buffer.add(node.getKey());
+		
+		int tmp=0;
+		for(int i=buffer.size()-1; i>=0;i--){
+			tmp+=buffer.get(i);
+			if(tmp==sum){
+				print(buffer, i, buffer.size()-1);
+			}
+			
+			
+		}
+		findSum2(node.getLeft(), sum,  (ArrayList<Integer>)buffer.clone());
+		findSum2(node.getRight(), sum, (ArrayList<Integer>) buffer.clone());
+	}
+	
 	public static void main(String[] args) {
 		/*
 		 *             50
@@ -56,6 +73,7 @@ public class FindPaths {
 		
 		FindPaths tree = new FindPaths();
 		tree.findSum(root, 70, new ArrayList<Integer>(), 0);
+		//tree.findSum2(root, 70, new ArrayList<Integer>());
 	}
 
 }

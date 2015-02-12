@@ -39,14 +39,14 @@ public class NextGreatestNumberWithSameDigits {
 	
 	private void copy(char[] val, int index) {
 		char[] val2 = new char[val.length];
-		//copy from 0 - (i-1)
+		//copy from 0 - (index-1)
 		for(int i=0;i<=index-1;i++){
 			val2[i]=val[i];
 		}
-		//put n-1
+		//put index
 		val2[index] = val[val.length-1];
 		
-		//put 
+		//put index+1
 		val2[index+1] = val[index];
 		
 		//rotate and keep rest
