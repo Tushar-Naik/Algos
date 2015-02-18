@@ -12,13 +12,17 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
+import java.util.concurrent.atomic.AtomicInteger;
+/*
+ * Design this better, what I have here is basic Client and multithreaded server with bounded 10 threads in pool to server
+ */
 public class MyServer {
 	public static final int acceptQueueSize = 128;
+	public static final AtomicInteger rps = new AtomicInteger(0);
 	
 	private void init() throws IOException{
 		
-		ExecutorService executor = Executors.newFixedThreadPool(10);
+		ExecutorService executor = Executors.newFixedThreadPool(100);
 		final ServerSocket serverSocket = new ServerSocket(8081, acceptQueueSize);
 		
 		try {
@@ -42,7 +46,31 @@ public class MyServer {
 			}
 		}.start();
 		Thread.sleep(1000);
-		new Client().init();
+		new Thread(){
+			public void run(){
+				try {
+					new Client().init();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}.start();
+
+		
+		new Thread(){
+			public void run(){
+				try {
+					while(true){
+						int old =rps.get(); 
+						Thread.sleep(1000);
+						System.out.println(rps.get());
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}.start();
+		
 	}
 	
 	private static class Client{
@@ -50,7 +78,7 @@ public class MyServer {
 			ExecutorService executor = Executors.newFixedThreadPool(10);
 			while(true){
 				executor.submit(new ClientJob());
-				Thread.sleep(100);
+				Thread.sleep(10);
 			}
 		}
 	}
@@ -95,12 +123,12 @@ public class MyServer {
 				BufferedReader stream =  new  BufferedReader( new InputStreamReader(is));
 				
 				while(stream.ready()){
-					System.out.println(stream.readLine());
+					//System.out.println(stream.readLine());
 				}
 				
 				outStream =  new PrintStream(socket.getOutputStream());
 				outStream.write(("Works: "+Thread.currentThread().getName()+"\n").getBytes());
-				
+				rps.incrementAndGet();
 			} catch (IOException e) {
 				e.printStackTrace();
 			} finally{
