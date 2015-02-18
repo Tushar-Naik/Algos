@@ -22,7 +22,7 @@ public class MyServer {
 	
 	private void init() throws IOException{
 		
-		ExecutorService executor = Executors.newFixedThreadPool(100);
+		ExecutorService executor = Executors.newFixedThreadPool(800);
 		final ServerSocket serverSocket = new ServerSocket(8081, acceptQueueSize);
 		
 		try {
@@ -63,7 +63,7 @@ public class MyServer {
 					while(true){
 						int old =rps.get(); 
 						Thread.sleep(1000);
-						System.out.println(rps.get());
+						System.out.println("============================================================"+(rps.get()-old));
 					}
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -75,10 +75,10 @@ public class MyServer {
 	
 	private static class Client{
 		public void init() throws InterruptedException{
-			ExecutorService executor = Executors.newFixedThreadPool(10);
+			ExecutorService executor = Executors.newFixedThreadPool(200);
 			while(true){
 				executor.submit(new ClientJob());
-				Thread.sleep(10);
+				Thread.sleep(1);
 			}
 		}
 	}
@@ -92,7 +92,7 @@ public class MyServer {
 				socket = new Socket("localhost", 8081);
 				writer = new PrintWriter( socket.getOutputStream());
 				writer.write("Input to you : "+Thread.currentThread().getName());
-				
+				//System.out.println("wrote");
 			} catch (UnknownHostException e) {
 				e.printStackTrace();
 			} catch (IOException e) {
@@ -123,12 +123,15 @@ public class MyServer {
 				BufferedReader stream =  new  BufferedReader( new InputStreamReader(is));
 				
 				while(stream.ready()){
-					//System.out.println(stream.readLine());
+					//System.out.print(".");
+					stream.readLine();
+					
 				}
 				
 				outStream =  new PrintStream(socket.getOutputStream());
 				outStream.write(("Works: "+Thread.currentThread().getName()+"\n").getBytes());
 				rps.incrementAndGet();
+				//System.out.println("read");
 			} catch (IOException e) {
 				e.printStackTrace();
 			} finally{
