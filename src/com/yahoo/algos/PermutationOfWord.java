@@ -20,6 +20,7 @@ public class PermutationOfWord {
 	
 	public static void main(String[] args) {
 		permutations("", "ABCDE");
+		System.out.println("ABCD".substring(2, 2));//NOTE THIS picks nothing. So starting from index i take j-i
 		System.out.println("Total Permutations: "+count);
 	}
 }

@@ -54,5 +54,14 @@ public class FindCycle<T> {
 		} catch (IllegalStateException ex) {
 			System.out.println("Cycle Detected");
 		}
+		int x = 8;
+		System.out.println((x & (x-1))==0);//if x is power of 2
+		System.out.println("unhappy".substring(2,7).equals("unhappy".substring(2))); //same
+		String check = "ilikesamsung";
+		int i =3;
+		System.out.println(check.substring(0,i)+" "+ check.substring(i, check.length()-i)+" "+check.substring(i));
+		
+		
+		
 	}
 }

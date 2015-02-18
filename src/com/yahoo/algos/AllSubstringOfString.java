@@ -8,7 +8,8 @@ import java.util.List;
 public class AllSubstringOfString {
 
 	/**
-	 * Why O(N^2) ?? has to be O(N)
+	 * Why O(N^2) ?? has to be O(N) NOTE: O(n) is suffix and N^2 is Substrings.
+	 * You can find suffix and sort the array now easy to find max repeated string by comparing i and i+1 in your array
 	 * Java String internally maintains char[] hence the substring call is a linear time and space call
 	 */
 	
@@ -25,7 +26,7 @@ public class AllSubstringOfString {
 		System.out.println(sList);
 	}
 	
-	private void subString2(String str){
+	private void suffix(String str){
 		int length = str.length();
 		String[] subStrings = new String[str.length()];
 		for(int i=0;i<length;i++){
@@ -43,7 +44,7 @@ public class AllSubstringOfString {
 	public static void main(String[] args) {
 		new AllSubstringOfString().subStrings("aasasatb");
 		System.out.println("----------");
-		new AllSubstringOfString().subString2("aasasatb");
+		new AllSubstringOfString().suffix("aasasatb");
 	}
 
 }

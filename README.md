@@ -21,7 +21,7 @@ package com.fb.graph
 1. Find paths in tree that sum to K (can have negative vals and can have more than one path)
 1. Structurally similar Graphs
 1. Is a Graph a Binary Search Tree
-
+1. Reverse Tree
 
 ## Tree/ Random ##  
 package com.stackoverflow.ques
@@ -41,6 +41,7 @@ package com.linkedin.algos;
 1. Swap Kth Element from start end in Linked List
 1. Find a Loop in Linked List and break the loop      
 1. Create a Double Linked list from the leafs of a Binary Tree.
+1. Swap alternate Nodes
 
 ## Programs ##
 package com.flipkart.programs;   
@@ -88,6 +89,8 @@ package com.yahoo.algos;
 1. Next Greatest Number With Same Digits
 1. All Substrings of a String
 1. Path to reach N stairs chosing 1,2 or 3 steps at a time.
+1. Word Break
+1. Word wrap
 
 LSG Stats
 BULK:

@@ -8,7 +8,8 @@ Edit Distance
 
 Recommendation 
 Revise Trie, Search, BST (delete, floor, insert, search), LCA, Inorder no Recurse, Quick sort/select, Heap, 
-Rotate array pivot, LL Palindrome, Permutation word
+Rotate array pivot, LL Palindrome, Permutation word, LCS, Inorder Successor, Power, ilikesam match Dictionery
+Snakes and Ladders
 
 Design
 Chess
@@ -24,4 +25,17 @@ System Design
 2) Google Search
 3) Facebook
 4) Make my trip
+
+Design:
+======
+-Api param should take interface. Param boolean can be changed to enum val
+-Code to interface List l = new ArrayList helps Polymorphism
+-Favour composition over Inheritance.
+-Encapsulate what changes. Make interface implement that using the changing one
+-Have strict types. final, private, package private (default). Protected/public exposed out. 
+ Package pvt imp can change like ThreadLocal map changed fromHashMap tp Indentity Map to its own map
+-Avoid overloading and varargs.
+
+Think Decorator, Builder, Adapter, Strategy, Template
+
 

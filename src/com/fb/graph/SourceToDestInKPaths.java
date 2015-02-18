@@ -8,7 +8,7 @@ import com.yahoo.algos.MyQueue;
 
 /**
  * Count all possible walks from a source to a destination with exactly k edges
- * Given a directed graph and two vertices ÔuÕ and ÔvÕ in it, count all possible walks from ÔuÕ to ÔvÕ with exactly k edges on the walk. 
+ * Given a directed graph and two vertices ï¿½uï¿½ and ï¿½vï¿½ in it, count all possible walks from ï¿½uï¿½ to ï¿½vï¿½ with exactly k edges on the walk. 
  */
 public class SourceToDestInKPaths<T> {
 
@@ -70,7 +70,7 @@ public class SourceToDestInKPaths<T> {
 		*/
 		
 		SourceToDestInKPaths<GraphNode> sourceToDestInKPaths = new SourceToDestInKPaths<GraphNode>(dg);
-		System.out.println(sourceToDestInKPaths.path(zero, three, 3));
+		System.out.println(sourceToDestInKPaths.path(zero, three, 2));
 		
 	}
 	private class QueueNode<K>{
