@@ -22,7 +22,7 @@ public class MyServer {
 	
 	private void init() throws IOException{
 		
-		ExecutorService executor = Executors.newFixedThreadPool(800);
+		ExecutorService executor = Executors.newFixedThreadPool(1000);
 		final ServerSocket serverSocket = new ServerSocket(8081, acceptQueueSize);
 		
 		try {
@@ -75,7 +75,7 @@ public class MyServer {
 	
 	private static class Client{
 		public void init() throws InterruptedException{
-			ExecutorService executor = Executors.newFixedThreadPool(200);
+			ExecutorService executor = Executors.newFixedThreadPool(500);
 			while(true){
 				executor.submit(new ClientJob());
 				Thread.sleep(1);
